@@ -1,84 +1,69 @@
-##############################
-## Java
-##############################
-.mtj.tmp/
-*.class
-*.jar
-*.war
-*.ear
-*.nar
-hs_err_pid*
+*.rbc
+capybara-*.html
+.rspec
+/db/*.sqlite3
+/db/*.sqlite3-journal
+/db/*.sqlite3-[0-9]*
+/public/system
+/coverage/
+/spec/tmp
+*.orig
+rerun.txt
+pickle-email-*.html
 
-##############################
-## Maven
-##############################
-target/
-pom.xml.tag
-pom.xml.releaseBackup
-pom.xml.versionsBackup
-pom.xml.next
-pom.xml.bak
-release.properties
-dependency-reduced-pom.xml
-buildNumber.properties
-.mvn/timing.properties
-.mvn/wrapper/maven-wrapper.jar
+# Ignore all logfiles and tempfiles.
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
 
-##############################
-## Gradle
-##############################
-bin/
-build/
-.gradle
-.gradletasknamecache
-gradle-app.setting
-!gradle-wrapper.jar
+# TODO Comment out this rule if you are OK with secrets being uploaded to the repo
+config/initializers/secret_token.rb
+config/master.key
 
-##############################
-## IntelliJ
-##############################
-out/
-.idea/
-.idea_modules/
-*.iml
-*.ipr
-*.iws
+# Only include if you have production secrets in this file, which is no longer a Rails default
+# config/secrets.yml
 
-##############################
-## Eclipse
-##############################
-.settings/
-bin/
-tmp/
-.metadata
-.classpath
-.project
-*.tmp
-*.bak
-*.swp
-*~.nib
-local.properties
-.loadpath
-.factorypath
+# dotenv, dotenv-rails
+# TODO Comment out these rules if environment variables can be committed
+.env
+.env.*
 
-##############################
-## NetBeans
-##############################
-nbproject/private/
-build/
-nbbuild/
-dist/
-nbdist/
-nbactions.xml
-nb-configuration.xml
+## Environment normalization:
+/.bundle
+/vendor/bundle
 
-##############################
-## Visual Studio Code
-##############################
-.vscode/
-.code-workspace
+# these should all be checked in to normalize the environment:
+# Gemfile.lock, .ruby-version, .ruby-gemset
 
-##############################
-## OS X
-##############################
-.DS_Store
+# unless supporting rvm < 1.11.0 or doing something fancy, ignore this:
+.rvmrc
+
+# if using bower-rails ignore default bower_components path bower.json files
+/vendor/assets/bower_components
+*.bowerrc
+bower.json
+
+# Ignore pow environment settings
+.powenv
+
+# Ignore Byebug command history file.
+.byebug_history
+
+# Ignore node_modules
+node_modules/
+
+# Ignore precompiled javascript packs
+/public/packs
+/public/packs-test
+/public/assets
+
+# Ignore yarn files
+/yarn-error.log
+yarn-debug.log*
+.yarn-integrity
+
+# Ignore uploaded files in development
+/storage/*
+!/storage/.keep
+/public/uploads
